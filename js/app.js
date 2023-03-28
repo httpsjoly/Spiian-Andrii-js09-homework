@@ -18,3 +18,16 @@ arrB = arrB.filter(Boolean);
 console.log(arrB);
 
 
+minVal = maxVal = arrB[0];
+
+for(i = 0; i < arrB.length; i++) {
+  if(arrB[i] < minVal) {
+    minVal = arrB[i];
+  }
+  else if (arrB[i] > maxVal) {
+    maxVal = arrB[i];
+  }
+}
+
+console.log(`Min value is ${minVal}`);
+console.log(`Max value is ${maxVal}`);
